@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  rhtap/gitops: ls4-jan172026
+  janus-idp.io/tekton: ls4-jan172026
+  backstage.io/kubernetes-id: ls4-jan172026
+  backstage.io/kubernetes-namespace: hello4
+  app.kubernetes.io/part-of: ls4-jan172026
+resources:
+  - application-dev.yaml
